@@ -56,6 +56,6 @@ grouped = data.groupby(["What type of cranberry saucedo you typically have?", "W
 #x=grouped.agg([np.mean,np.sum,np.std])
 #x["income"]["mean"].plot(kind="bar")
 grouped=data.groupby("How would you describe where you live?")
-x=grouped.agg("count")
+x=grouped.agg("mean")
 x["income"].plot(kind="bar")
 #grouped.apply(lambda x : print(x.value_counts()))
